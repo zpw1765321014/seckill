@@ -8,7 +8,11 @@
 
 namespace App\rpc;
 
-
+/**
+ * rpc 对应的user 服务
+ * Class UserService
+ * @package App\rpc
+ */
 class UserService
 {
 
