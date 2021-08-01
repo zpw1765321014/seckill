@@ -1,0 +1,25 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: zpw
+ * Date: 2021/8/1
+ * Time: 16:36
+ */
+
+namespace Core\event;
+
+
+use Swoole\Http\Response;
+
+/**
+ * 用户的请求和响应
+ * Class Request
+ * @package Core\event
+ */
+class Request
+{
+      public  function run(\Swoole\Http\Request $request,Response $response)
+      {
+
+      }
+}
