@@ -15,7 +15,7 @@ class client{
             [
                 'service'=>'UserService',
                 'action'=>'index',
-                'param'=>'1',
+                'param'=>'1000',
             ]
         );
         $cli->send($json_data);

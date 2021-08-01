@@ -20,6 +20,8 @@ class Request
 {
       public  function run(\Swoole\Http\Request $request,Response $response)
       {
-
+             //初始化 resquest
+              \Core\http\Request::init($request);
+              //路由注册模块
       }
 }
