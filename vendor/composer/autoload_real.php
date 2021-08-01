@@ -8,6 +8,7 @@ class ComposerAutoloaderInit1033d61e2eb9a304da672ec4f922a785
 
     public static function loadClassLoader($class)
     {
+
         if ('Composer\Autoload\ClassLoader' === $class) {
             require __DIR__ . '/ClassLoader.php';
         }

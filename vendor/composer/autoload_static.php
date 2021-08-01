@@ -16,6 +16,7 @@ class ComposerStaticInit1033d61e2eb9a304da672ec4f922a785
         'P' => 
         array (
             'Psr\\Container\\' => 14,
+            'Psr\\Cache\\' => 10,
             'PhpDocReader\\' => 13,
         ),
         'O' => 
@@ -50,6 +51,10 @@ class ComposerStaticInit1033d61e2eb9a304da672ec4f922a785
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
         'PhpDocReader\\' => 
         array (

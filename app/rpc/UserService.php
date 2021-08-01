@@ -6,18 +6,20 @@
  * Time: 17:51
  */
 
-namespace app\rpc;
+namespace App\rpc;
 
 
 class UserService
 {
 
-      public function index()
+      public function index($id)
       {
+
             return [
                 'name'=>'zpw',
                 'age'=>28,
                 'money'=>10000,
+                'id'   => $id,
             ];
       }
 

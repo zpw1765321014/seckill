@@ -8,7 +8,6 @@
 
 namespace Core\event;
 
-
 use Core\Config;
 use Swoole\Server;
 
@@ -26,14 +25,17 @@ class Receive
          if ($ServerType == 'rpc')
          {
              $oper = \json_decode($data, true);
-
-             // 执行对象
-             $class = explode("::", $oper['method'])[0];
+             /***********得到对应的控制器 start************/
+             $class = $oper['service'];
+             $class = "\\App\\rpc\\$class";
              $class = new $class();
+             /***********得到对应的控制器 end************/
              // 得到执行的方法
-             $method = explode("::", $oper['method'])[1];
+             $method = $oper['action'];
              // 执行
-             $ret = $class->{$method}(...$oper['params']);
+             $result = $class->{$method}($oper['param']);
+             $server->send($fd,json_encode($result,true));
+         }else{ //处理对应的tcp服务
 
          }
     }
