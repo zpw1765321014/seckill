@@ -1,14 +1,15 @@
 <?php
 namespace App\controllers;
-
-
 /**
- * @Bean(name="user")
+ * 用户控制器模块
+ * Class UserController
+ * @package App\controllers
  */
 class UserController
 {
-    /**
-     * @Value(name="version")
-     */
-    public $version ;
-}
+
+    public function index()
+    {
+        return '<h1 align="center">this is user page</h1>';
+    }
+}// class end

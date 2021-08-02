@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="e6e9a205-7b69-4314-8b93-d3cacbd29222" name="seckill" url="http://192.168.17.128">
-        <fileTransfer host="192.168.17.128" port="22" rootFolder="/data/web" accessType="SFTP">
+      <webServer id="e6e9a205-7b69-4314-8b93-d3cacbd29222" name="seckill" url="http://192.168.1.181">
+        <fileTransfer host="192.168.1.181" port="22" rootFolder="/data/web/seckill" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

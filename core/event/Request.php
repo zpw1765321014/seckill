@@ -9,6 +9,7 @@
 namespace Core\event;
 
 
+use Core\http\Route;
 use Swoole\Http\Response;
 
 /**
@@ -23,5 +24,6 @@ class Request
              //初始化 resquest
               \Core\http\Request::init($request);
               //路由注册模块
+              Route::getInstance()->init($request,$response);
       }
 }
