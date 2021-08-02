@@ -8,7 +8,11 @@
 
 namespace Core;
 
-
+/**
+ * swoole 事件启动器 所有的事件在这执行
+ * Class Event
+ * @package Core
+ */
 class Event
 {
      use Singleton;
@@ -18,5 +22,7 @@ class Event
          //设置对应的事件
            $server->on('Request',[(new \Core\event\Request()),'run']);
            $server->on('receive', [(new \Core\event\Receive()), 'run']);
+           $server->on('workerStart', [(new \Core\event\WorkerStart()), 'run']);
      }
-}
+
+}//class end
